@@ -1,0 +1,1 @@
+# GearScoreLite addon for wotlk

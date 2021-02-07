@@ -1,14 +1,13 @@
 
 -------------------------------------------------------------------------------
 --                            GearScoreLite                                  --
---                             Version 3x04                                   --
---								Mirrikat45                                   --
+--                             Version 3x05                                  --
+--						    Mirrikat45, userTim                              --
 -------------------------------------------------------------------------------
 
---Change Log 3x04
---Fixed an error with GS less over 6000.
---GS will now be reduced on un-enchanted items that are enchantable. 
---Remember that gems are always shown as empty by initial API calls so I cant determine if gems are missing or not.
+-- Change Log 3x05
+-- Fixed inspection issue, mouseover issue
+-- Added color multiplier
 
 ------------------------------------------------------------------------------
 
@@ -267,21 +266,25 @@ function GS_MANSET(Command)
 	if ( strlower(Command) == "compare" ) then GS_Settings["Compare"] = GS_Settings["Compare"] * -1; if ( GS_Settings["Compare"] == 1 ) then print ("Comparisons: On"); else print ("Comparisons: Off"); end; return; end
     if ( strlower(Command) == "naxx") then
         GS_Settings["Multiplier"] = 1.39
+        print('|cFFFFFF00GS: |cFFFFFFFFCurrent content level set to |cFFFFFF00Naxxramas')
         return
     end
 
     if ( strlower(Command) == "uld") then
-        GS_Settings["Multiplier"] = 1.25
+        GS_Settings["Multiplier"] = 1.275
+        print('|cFFFFFF00GS: |cFFFFFFFFCurrent content level set to |cFFFFFF00Ulduar')
         return
     end
 
     if ( strlower(Command) == "toc") then
         GS_Settings["Multiplier"] = 1.12
+        print('|cFFFFFF00GS: |cFFFFFFFFCurrent content level set to |cFFFFFF00ToC')
         return
     end
 
     if ( strlower(Command) == "icc") then
         GS_Settings["Multiplier"] = 1
+        print('|cFFFFFF00GS: |cFFFFFFFFCurrent content level set to |cFFFFFF00ICC')
         return
     end
 

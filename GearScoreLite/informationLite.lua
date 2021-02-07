@@ -39,7 +39,7 @@ GS_DefaultSettings = {
 }
 
 GS_Special = {
-	["A"] = "ALLO",
+	["A"] = "THE RUSSIAN",
  	["Usertim"] = { ["Type"] = "A" },
     ["Usertimbtw"] = { ["Type"] = "A" },
  	
@@ -116,10 +116,10 @@ GS_CommandList = {
 	[4] = "/gs level -> Toggles iLevel information.",
 	[5] = "/gs reset --> Resets GearScore's Options back to Default.",
 	[6] = "/gs compare --> Toggles display of comparative info between you and your target's GearScore.",
-    [7] = "/gs naxx --> Set current coloring of gs to naxx level",
-    [8] = "/gs uld --> Set current coloring of gs to uld level",
-    [9] = "/gs toc --> Set current coloring of gs to toc level",
-    [10] = "/gs icc --> Set current coloring of gs to icc level",
+    [7] = "/gs naxx --> Set current gs coloring to naxx level",
+    [8] = "/gs uld --> Set current gs coloring to uld level",
+    [9] = "/gs toc --> Set current gs coloring to toc level",
+    [10] = "/gs icc --> Set current gs coloring to icc level",
 }
 
 GS_ShowSwitch = {[0] = 2,[1] = 3,[2] = 0,[3] = 1}

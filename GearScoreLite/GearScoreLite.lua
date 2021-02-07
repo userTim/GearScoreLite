@@ -124,9 +124,7 @@ end
 
 function GearScore_GetQuality(ItemScore, Multiplier)
 
-    if (Multiplier) then 
-        ItemScore = ItemScore * Multiplier
-    else 
+    if (not Multiplier) then
         ItemScore = ItemScore * GS_Settings["Multiplier"]
     end
 

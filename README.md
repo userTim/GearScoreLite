@@ -12,7 +12,7 @@ Fixed an issue that happens when hover your cursor over someone while inspecting
     /gs toc - ~5300gs
     /gs icc - default 6000gs
 
-### Default and naxx compared
+### Naxx and default compared
 <a href="https://i.imgur.com/1ymf2Nq.png">
     <img src="https://i.imgur.com/1ymf2Nq.png" width="48.5%">
 </a>

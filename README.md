@@ -1,7 +1,7 @@
 # GearScoreLite addon for wotlk
 
 Tweaked for people who play on **FRESHEST FRESHES**  
-Changes coloring based on current content level
+Changes coloring based on current content level  
 Use commands to change
 
 Fixed an issue that happens when hover your cursor over someone while inspecting someone else and whole inspection window becomes wacky

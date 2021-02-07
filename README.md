@@ -13,9 +13,9 @@ Fixed an issue that happens when hover your cursor over someone while inspecting
     /gs icc - default 6000gs
 
 ### Naxx and default compared
-<a href="https://i.imgur.com/1ymf2Nq.png">
-    <img src="https://i.imgur.com/1ymf2Nq.png" width="48.5%">
+<a href="https://i.imgur.com/ox0mJqs.png">
+    <img src="https://i.imgur.com/ox0mJqs.png" width="48.5%">
 </a>
-<a href="https://i.imgur.com/dCfAZXT.png">
-    <img src="https://i.imgur.com/dCfAZXT.png" align="right" width="48.5%">
+<a href="https://i.imgur.com/vqBoAzD.png">
+    <img src="https://i.imgur.com/vqBoAzD.png" align="right" width="48.5%">
 </a>

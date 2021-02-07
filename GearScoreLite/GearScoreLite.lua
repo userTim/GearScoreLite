@@ -145,8 +145,23 @@ end
 -------------------------------------------------------------------------------
 
 ----------------------------- Hook Set Unit -----------------------------------
-function GearScore_HookSetUnit(arg1, arg2)
-	if ( GS_PlayerIsInCombat ) then return; end
+function GearScore_HookSetUnit(arg1, arg2)	
+	local currentFrame = EnumerateFrames()
+	local isInspecting = false
+
+	while currentFrame do
+	    if currentFrame:IsVisible() then
+	        local name = currentFrame:GetName()
+	        if name and string.find(name, "InspectTalentFrame") then 
+                isInspecting = true 
+                break 
+            end
+	    end
+	    currentFrame = EnumerateFrames(currentFrame)
+	end
+
+	if ( GS_PlayerIsInCombat or isInspecting ) then return end
+
 	local Name = GameTooltip:GetUnit();local MouseOverGearScore, MouseOverAverage = 0,0
 	if ( CanInspect("mouseover") ) and ( UnitName("mouseover") == Name ) and not ( GS_PlayerIsInCombat ) then 
 		NotifyInspect("mouseover"); MouseOverGearScore, MouseOverAverage = GearScore_GetScore(Name, "mouseover"); 

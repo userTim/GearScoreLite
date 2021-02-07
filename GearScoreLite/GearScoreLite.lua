@@ -122,7 +122,14 @@ end
 
 -------------------------------- Get Quality ----------------------------------
 
-function GearScore_GetQuality(ItemScore)    
+function GearScore_GetQuality(ItemScore, Multiplier)
+
+    if (Multiplier) then 
+        ItemScore = ItemScore * Multiplier
+    else 
+        ItemScore = ItemScore * GS_Settings["Multiplier"]
+    end
+
 	if ( ItemScore > 5999 ) then ItemScore = 5999; end
 	local Red = 0.1; local Blue = 0.1; local Green = 0.1; local GS_QualityDescription = "Legendary"
    	if not ( ItemScore ) then return 0, 0, 0, "Trash"; end
@@ -245,6 +252,26 @@ function GS_MANSET(Command)
     if ( strlower(Command) == "item" ) then GS_Settings["Item"] = GS_ItemSwitch[GS_Settings["Item"]]; if ( GS_Settings["Item"] == 1 ) or ( GS_Settings["Item"] == 3 ) then print("Item Scores: On"); else print("Item Scores: Off"); end; return; end
 	if ( strlower(Command) == "level" ) then GS_Settings["Level"] = GS_Settings["Level"] * -1; if ( GS_Settings["Level"] == 1 ) then print ("Item Levels: On"); else print ("Item Levels: Off"); end; return; end
 	if ( strlower(Command) == "compare" ) then GS_Settings["Compare"] = GS_Settings["Compare"] * -1; if ( GS_Settings["Compare"] == 1 ) then print ("Comparisons: On"); else print ("Comparisons: Off"); end; return; end
+    if ( strlower(Command) == "naxx") then
+        GS_Settings["Multiplier"] = 1.39
+        return
+    end
+
+    if ( strlower(Command) == "uld") then
+        GS_Settings["Multiplier"] = 1.25
+        return
+    end
+
+    if ( strlower(Command) == "toc") then
+        GS_Settings["Multiplier"] = 1.12
+        return
+    end
+
+    if ( strlower(Command) == "icc") then
+        GS_Settings["Multiplier"] = 1
+        return
+    end
+
 	print("GearScore: Unknown Command. Type '/gs' for a list of options")
 end
 
@@ -281,4 +308,3 @@ SlashCmdList["MY2SCRIPT"] = GS_MANSET
 SLASH_MY2SCRIPT1 = "/gset"
 SLASH_MY2SCRIPT2 = "/gs"
 SLASH_MY2SCRIPT3 = "/gearscore"
-

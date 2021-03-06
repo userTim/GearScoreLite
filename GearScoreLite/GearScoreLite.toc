@@ -1,7 +1,7 @@
 ## Interface: 30300
 ## Title: GearScoreLite
 ## Notes: Quickly and easily judge a player's level of Gear.
-## Version: 3x05
+## Version: 3x05a
 ## Author: Mirrikat45, userTim
 ## SavedVariables: GS_Settings
 

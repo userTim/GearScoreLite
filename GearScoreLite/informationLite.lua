@@ -35,14 +35,13 @@ GS_DefaultSettings = {
 	["Compare"] = -1,
 	["Level"] = -1,
 	["Average"] = -1,
-    ["Multipler"] = 1,
+	["Multiplier"] = 1,
 }
 
 GS_Special = {
 	["A"] = "THE RUSSIAN",
- 	["Usertim"] = { ["Type"] = "A" },
-    ["Usertimbtw"] = { ["Type"] = "A" },
- 	
+	["Usertim"] = { ["Type"] = "A" },
+	["Usertimbtw"] = { ["Type"] = "A" },
 }
 
 GS_Rarity = {
@@ -116,10 +115,10 @@ GS_CommandList = {
 	[4] = "/gs level -> Toggles iLevel information.",
 	[5] = "/gs reset --> Resets GearScore's Options back to Default.",
 	[6] = "/gs compare --> Toggles display of comparative info between you and your target's GearScore.",
-    [7] = "/gs naxx --> Set current gs coloring to naxx level",
-    [8] = "/gs uld --> Set current gs coloring to uld level",
-    [9] = "/gs toc --> Set current gs coloring to toc level",
-    [10] = "/gs icc --> Set current gs coloring to icc level",
+	[7] = "/gs naxx --> Set current gs coloring to naxx level",
+	[8] = "/gs uld --> Set current gs coloring to uld level",
+	[9] = "/gs toc --> Set current gs coloring to toc level",
+	[10] = "/gs icc --> Set current gs coloring to icc level",
 }
 
 GS_ShowSwitch = {[0] = 2,[1] = 3,[2] = 0,[3] = 1}
